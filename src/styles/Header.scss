@@ -1,0 +1,32 @@
+body{
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 25px;
+    img{
+        height: 60%;
+        @media screen and (max-width: 700px){
+            height: 40px;
+        }
+    }
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+    ul li,a {
+        font-size: 15px;
+        color:#FF6060;
+        text-decoration: none;
+    }
+    header {
+        margin: 15px 20px 0 20px;
+    }
+}

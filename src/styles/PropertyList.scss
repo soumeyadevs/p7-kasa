@@ -1,0 +1,69 @@
+.PropertyListing{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+.PropertyGrid {
+    border-radius: 10px;
+    display: inline-block;
+    width: 340px;
+    height: 340px;
+    position: relative;
+    margin: 25px;
+    overflow: hidden;
+}
+.PropertyGrid img {
+    width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.PropertyGrid h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+/*Deskop*/
+@media screen and (max-width: 750px) {
+    .cart{
+         margin-top: 20px;
+         padding: 0;
+         background: none;
+    }
+    .cartGrid{
+         width: 100%;
+         margin-top: 10px;
+    }
+    .cart-container{
+         margin: 0;
+    }
+}
+
+/*Mobile*/
+@media screen and (max-device-width: 320px) {
+    .cartGrid {
+         border-radius: 10px;
+         display: inline-block;
+         height: 225px;
+         position: relative;
+         overflow: hidden;
+         width: 100%;
+
+         margin: 0 ;
+    }
+    .cart_text {
+         padding: 10px;
+         font-size: 13px;
+         text-align: left;
+    }
+    .cart-container{
+         margin: 0;
+    }
+}
